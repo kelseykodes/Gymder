@@ -1,0 +1,5 @@
+.weather-bar {
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+}

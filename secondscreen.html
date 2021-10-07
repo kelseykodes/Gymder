@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/secondscreen.css">
     <title>Gymder</title>
 </head>
 <!-- SCREEN TWO -->
 <body>
 
     <!-- weather bar will stay displayed as user scrolls thru site -->
-    <div>
-    <span>Atlanta's Daily Forecast</span>
-        <ul>
-            <li>Temp:<span class="week temp"></span><span>&#8457;</span> </li>
-            <li>Wind Speed:<span class="week wind"></span></li>
-            <li>Humidity:<span class="week humidity"></span><span>&#37;</span></li>
+    <div class = 'weather-bar'>
+     <span>Atlanta's Daily Forecast</span>
+        <ul id = 'weather-items'>
+    
+            <span>Temp:<span class="week temp"></span>
+            <span>Wind Speed:<span class="week wind"></span>
+            <span>Humidity:<span class="week humidity"></span>
+          
         </ul>
     </div>
     <!-- should display the name of city selected -->
