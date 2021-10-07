@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="./assets/css/secondscreen.css">
-    <title>Gymder</title>
+    <link rel="stylesheet" href="./assets/css/screen2.css">
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"
+  ></script>
+    <title>Gymder: Gym List</title>
 </head>
 <!-- SCREEN TWO -->
 <body>
 
     <!-- weather bar will stay displayed as user scrolls thru site -->
     <div class = 'weather-bar'>
-     <span>Atlanta's Daily Forecast</span>
+      <h4 id='currentDay'></h4>
+     <h3>Atlanta's Daily Forecast: </h3>
         <ul id = 'weather-items'>
-    
-            <span>Temp:<span class="week temp"></span>
-            <span>Wind Speed:<span class="week wind"></span>
-            <span>Humidity:<span class="week humidity"></span>
+  
+            <span>Temp:<span class='week' id='temp'></span>
+            <span>Humidity:<span class='week' id='humidity'></span>
+            <span>Wind Speed:<span class='week' id='windspeed'></span>
           
         </ul>
     </div>
@@ -32,7 +41,7 @@
                     <div class="col s12 m7">
                       <div class="card">
                         <div class="card-image">
-                          <img src="images/sample-1.jpg">
+                          <!-- <img src="images/sample-1.jpg"> -->
                           <span class="card-title">Gym 1</span>
                         </div>
                         <div class="card-content">
@@ -51,7 +60,7 @@
                     <div class="col s12 m7">
                       <div class="card">
                         <div class="card-image">
-                          <img src="images/sample-1.jpg">
+                          <!-- <img src="images/sample-1.jpg"> -->
                           <span class="card-title">Gym 2</span>
                         </div>
                         <div class="card-content">
@@ -86,6 +95,6 @@
 
     </div>
 
-<script src="./assets/js/script.js"></script>
+<script src="./assets/js/screen2.js"></script>
 </body>
 </html>
