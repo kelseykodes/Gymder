@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Gymder</title>
-</head>
-<!-- SCREEN ONE  -->
-<body>
-    <div><h1>Gymder</h1></div>
-
-    <div>
-        <p1>Where Are You Located? Click Here</p1>
-            <ul class="cityBtn">
-                <!-- ADD BUTTONS TO LISTED ITEMS -->
-                <button><ul>Buckhead</ul></button>
-                <button><ul>Decatur</ul></button>
-                <button><ul>Downtown</ul></button>
-                <button><ul>Midtown</ul></button>
-            </ul>
+  </head>
+  <!-- SCREEN ONE  -->
+  <body>
+    <!-- ***************************************           -->
+    <div id="gym"><h1>Gymder</h1></div>
+    <div class="container1">
+      <div class="container2">
+        <button type="button" class='cityClicked' id="Buckhead" onclick="clickFunction(this.id)">Buckhead</button>
+        <div class="contentainer_img">
+        <button type="button" class='cityClicked' id='Decatur' onclick="clickFunctionDecatur(this.id)">Decatur</button>
+        <button type="button" class='cityClicked' id='Downtown' onclick="clickFunctionDowntown(this.id)">Downtown</button>
+        <button type="button" class='cityClicked' id='Midtown' onclick="clickFunctionMidtown(this.id)">Midtown</button>
+      </div>
     </div>
-    
-
-<script src="./assets/js/script.js"></script>
-</body>
+    <!-- ******************LOCAL STORAGE ********************-->
+    <fieldset>
+        <legend>Your Recent Search!</legend>
+        <p id='cityKey'></p>
+        <p id= 'cityValue'></p>
+        <div id='cityClickedDisplay'></div>
+    </fieldset>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
-

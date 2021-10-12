@@ -52,3 +52,12 @@ top: 100px;
     left: 400px;
   }
 
+  .card {
+      position:relative;
+      top: 125px;
+  }
+
+  .images {
+      height: 200px;
+      width: 250px;
+  }
