@@ -11,7 +11,6 @@ var getAtlantaWeather = function (Atlanta) {
   var weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?q=Atlanta&appid=' + ApiKey + '&units=imperial';
   console.log(getAtlantaWeather);
 
-
   fetch(weatherUrl)
     .then(function (response) {
       return response.json();
@@ -28,8 +27,7 @@ var getAtlantaWeather = function (Atlanta) {
 getAtlantaWeather();
   
 //BUCKHEAD 3 GYMS
-//BUCKHEAD 3 GYMS
-let buckheadHtml = `<div class='card'>
+let buckheadHtml = `<div class='card' style="width: 600px;" >
 <h2>${'Buckhead'}</h2>
 <img src='./assets/img/Buckhead/Windy Hill/aYkKfGN0_400x400.jpeg' class='images'>
 <p>${'Windy Hill Athletic Club'}</p>
@@ -37,21 +35,16 @@ let buckheadHtml = `<div class='card'>
 <p>${'Phone:(770) 746-0214'}</p>
 <p>${'Hours: 6AM - 11PM'}</p>
 <img src='./assets/img/Buckhead/Barrys/Barrys-Bootcamp-Signage.jpeg' class='images'>
-<p>${'Barrys Boot Camp'}</p>
-<p>${'Address: 303 East Paces Ferry Rd NE, Atlanta, GA 30305'}</p>
-<p>${'Phone:(404) 846-2880'}</p>
-<p>${'Hours: 5AM - 9PM'}</p>
+<p>${'This is gym two. It sucks and so do I at javascript.'}</p>
 <img src='./assets/img/Buckhead/Sculpthouse/SculptHouse_-01_1152.png' class='images'>
-<p>${'Barrys Boot Camp'}</p>
-<p>${'Address: 303 East Paces Ferry Rd NE, Atlanta, GA 30305'}</p>
-<p>${'Phone:(470) 553-0080'}</p>
+<p>${'This is gym three. It sucks and so do I at javascript.'}</p>
 <div> ${'<input type="button" onclick= window.location.href="index.html" value="Go back and choose another city!"/>'}
 </div>
 `
 document.getElementById('section').innerHTML = buckheadHtml
 
 //DECATUR 3 GYMS
-let decaturHtml = `<div class='card'>
+let decaturHtml = `<div class='card' style="width: 400px;" >
 <h2>${'Decatur'}</h2>
 <img src='./assets/img/Decatur/laFitness/1060.jpeg' class='images'>
 <p>${'This is gym one. Fill in more info about gym one.'}</p>
@@ -66,7 +59,7 @@ document.getElementById('sectionDecatur').innerHTML = decaturHtml
 
 
 //DOWNTOWN 3 GYMS
-let  downtownHtml = `<div class='card'>
+let  downtownHtml = `<div class='card' style="width: 300px;" >
 <h2>${'Downtown'}</h2>
 <img src='./assets/img/Downtown/bodyArchitects/download.png' class='images'>
 <p>${'This is gym one. Fill in more info about gym one.'}</p>
@@ -80,7 +73,7 @@ let  downtownHtml = `<div class='card'>
 document.getElementById('sectionDowntown').innerHTML = downtownHtml
 
 //MIDTOWN 3 GYMS
-let  midtownHtml = `<div class='card'>
+let  midtownHtml = `<div class='card' style="width: 300px;" >
 <h2>${'Midtown'}</h2>
 <img src='./assets/img/Midtown/blast/1519890076834.jpeg' class='images'>
 <p>${'This is gym one. Fill in more info about gym one.'}</p>
@@ -116,4 +109,3 @@ document.getElementById('sectionMidtown').innerHTML = midtownHtml
 //     const key = localStorage.key(i);
 //     const value = localStorage.getItem(key);
 //     cityClickedDisplay.innerHTML += `${key}: ${value}<br />`;
-

@@ -1,0 +1,65 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+       #map {
+        position: fixed;
+        top: 75px;
+      
+        left: 10%;
+        height: 600px;
+        width: 90%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .absolutediv {
+        position: absolute;
+        position: fixed;
+      
+        right: 1%;
+        width: 50%;
+      }
+      h5 {
+        /* position: sticky; */
+        /* top: 0; */
+        /* position: fixed; */
+        display: flex;
+        align-items: center;
+        /* background-color: blue; 
+        border: 2px solid #4CAF50;  */
+      }
+      
+      .week {
+        position: sticky;
+        top: 0;
+        /* background-color: green; */
+        /* border: 2px solid #4CAF50; */
+      }
+      /* fixed the weather nav bar */
+      .navbar {
+        position: fixed;
+        top: 0px;
+        background-color: rgba(112, 110, 110, 0.568);
+        color: white;
+        left: 0px;
+        width: 950px;
+        z-index: 1000;
+        background-position: initial initial;
+        background-repeat: initial initial;
+      }
+      
+      .navbar a {
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        position: fixed;
+        left: 400px;
+      }
+      .small-6 {
+        top: 75px;
+      }
