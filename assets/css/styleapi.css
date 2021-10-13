@@ -1,65 +1,115 @@
-/* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-       #map {
-        position: fixed;
-        top: 75px;
-      
-        left: 10%;
-        height: 600px;
-        width: 90%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      .absolutediv {
-        position: absolute;
-        position: fixed;
-      
-        right: 1%;
-        width: 50%;
-      }
-      h5 {
-        /* position: sticky; */
-        /* top: 0; */
-        /* position: fixed; */
-        display: flex;
-        align-items: center;
-        /* background-color: blue; 
-        border: 2px solid #4CAF50;  */
-      }
-      
-      .week {
-        position: sticky;
-        top: 0;
-        /* background-color: green; */
-        /* border: 2px solid #4CAF50; */
-      }
-      /* fixed the weather nav bar */
-      .navbar {
-        position: fixed;
-        top: 0px;
-        background-color: rgba(112, 110, 110, 0.568);
-        color: white;
-        left: 0px;
-        width: 950px;
-        z-index: 1000;
-        background-position: initial initial;
-        background-repeat: initial initial;
-      }
-      
-      .navbar a {
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        position: fixed;
-        left: 400px;
-      }
-      .small-6 {
-        top: 75px;
-      }
+
+#map {
+  position: fixed;
+  top: 75px;
+  right: 20px;
+  height: 800px;
+  width: 100%;
+  border-top: black solid 5px;
+  border-left: black solid 5px;
+}
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: radial-gradient(black, gray);
+}
+.absolutediv {
+  position: absolute;
+  position: fixed;
+  right: 1%;
+  width: 50%;
+}
+h5 {
+  display: flex;
+  align-items: center;
+}
+.week {
+  position: sticky;
+  top: 0;
+}
+/* fixed the weather nav bar */
+.navbar {
+  position: fixed;
+  top: 0px;
+  background-color: rgba(20, 19, 19, 0.979);
+  color: white;
+  left: 0px;
+  width: 100%;
+  z-index: 1000;
+  background-position: initial initial;
+  background-repeat: initial initial;
+  border: solid 5px gold;
+  border-radius: 7px;
+  padding: 7px;
+  border-bottom: solid 15px gold;
+  text-align: center;
+}
+.navbar a {
+  display: block;
+  color: #F2F2F2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: fixed;
+  left: 400px;
+}
+.small-6 {
+  top: 75px;
+}
+h5 {
+  position: relative;
+  left: 150px;
+  font-size: 50px;
+}
+.spa {
+  background-image: linear-gradient(rgba(221, 64, 64, 0.678), rgba(226, 230, 10, 0.829));
+  color: rgb(49, 47, 47);
+  border: solid black 2px;
+  padding: 1px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+legend {
+  background-color: rgb(0, 0, 0);
+  color: whitesmoke;
+  padding: 10px;
+  border-bottom: solid black 8px;
+  border-top: solid 8px black;
+  border-radius: 10px;
+}
+.images {
+  border: solid black 3px;
+  padding: 2px;
+  border-radius: 15px;
+}
+h2 {
+  border: solid black 3px;
+  background-color: rgb(8, 8, 8);
+  font-weight: bolder;
+  color: white;
+}
+.card {
+  background-image: linear-gradient(rgba(221, 64, 64, 0.678), rgba(226, 230, 10, 0.829));
+  position: relative;
+  top: 150px;
+  border-radius: 10px;
+  left: 40px;
+}
+.goba {
+  border-radius: 7px;
+  border: solid 3px black;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+.goba:hover {
+  border: solid 2px rgb(8, 29, 216);
+  background-color: rgb(145, 134, 134);
+  color: black;
+  font-weight: bolder;
+}
