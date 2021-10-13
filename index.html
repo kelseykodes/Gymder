@@ -1,29 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Gymder</title>
-</head>
-<!-- SCREEN ONE  -->
-<body>
-    <div><h1>Gymder</h1></div>
+  </head>
+  <!-- SCREEN ONE  -->
+  <body>
+    <!-- ***************************************           -->
+    <div id="gym"><h1>Gymder</h1></div>
+    <div class="container1">
+      <div class="container2">
+        <div class="contentainer_img">
+          <button
+            class="imgcont"
+            type="button"
+            onclick="window.location.href='screen2.html'"
+          >
+            Buckhead
+          </button>
+          <img src="./assets/img/BUck.jpg" />
+          <div>Buckhead</div>
+        </div>
 
-    <div>
-        <p1>Where Are You Located?</p1>
-            <ul class="cityBtn">
-                <!-- ADD BUTTONS TO LISTED ITEMS -->
-                <button><ul>Buckhead</ul></button>
-                <button><ul>Decatur</ul></button>
-                <button><ul>Downtown</ul></button>
-                <button><ul>Midtown</ul></button>
-            </ul>
+        <div class="contentainer_img">
+          <button
+            class="imgcont"
+            type="button"
+            onclick="window.location.href='screen2.html#sectionDecatur'"
+          >
+            Decatur
+          </button>
+          <img src="./assets/img/Decat.jpg" />
+          <div type="button" id="Decatur" class="imgcont">Decatur</div>
+        </div>
+
+        <div class="contentainer_img">
+          <img src="./assets/img/Downt.jpeg" />
+          <button
+            class="imgcont"
+            type="button"
+            onclick="window.location.href='screen2.html#sectionDowntown'"
+          >
+            Downtown
+          </button>
+        </div>
+
+        <div class="contentainer_img">
+          <img src="./assets/img/MIdt.jpg" />
+          <button
+            class="imgcont"
+            type="button"
+            onclick="window.location.href='screen2.html#sectionMidtown'"
+          >
+            Midtown
+          </button>
+        </div>
+      </div>
     </div>
-    
 
-<script src="./assets/js/script.js"></script>
-</body>
+    <!-- ***************************************           -->
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
-
