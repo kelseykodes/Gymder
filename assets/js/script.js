@@ -3,7 +3,9 @@ const cityValue = document.getElementById('cityValue');
 const cityClicked = document.querySelector('.cityClicked'); //added with TA
 const cityClickedDisplay = document.getElementById('cityClickedDisplay');
 const city = localStorage.getItem('city');
+cityClickedDisplay.innerHTML += `City: ${city}<br />`;
 //cityClickedDisplay.innerHTML += `City: ${city}<br />`; there is an error /
+
 function clickFunction (id){
 localStorage.setItem('city', id)
     window.location.href='secondscreen.html#section.html'
@@ -20,6 +22,8 @@ function clickFunctionMidtown (id){
     localStorage.setItem('city', id)
         window.location.href='secondscreen.html#sectionMidtown'
 };
+
+
 let map;
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
