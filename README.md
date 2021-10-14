@@ -16,7 +16,7 @@ This application is assigned to target users who exericise in the Atlanta Metrop
 - Begin by opening up preferred browser.
 
 ## Usage
-- Type in url: http://127.0.0.1:5500/Gymder/index.html
+- Type in url: https://kperkins97.github.io/Gymder/
 - User will be asked where they are located given the four area options of Buckhead, Decatur, Downtown and Midtown!
 - User will have the ability of choosing only one area of metro atlanta at a time.
 - When user clicks preferred area,
@@ -28,8 +28,9 @@ This application is assigned to target users who exericise in the Atlanta Metrop
 - User will be able to see the most recent city area they selected.
 
 ## Preview 
+Webpage Preview Screen
 
-
+<img src='./assets/img/Screen Shot 2021-10-13 at 7.34.42 PM.png'>
 
 ## Credits
 Collaborators: 
